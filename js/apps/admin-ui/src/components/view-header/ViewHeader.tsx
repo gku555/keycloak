@@ -122,7 +122,7 @@ export const ViewHeader = ({
               )}
             </Level>
           </LevelItem>
-          <LevelItem>
+          {/*<LevelItem>
             <Toolbar className="pf-v5-u-p-0">
               <ToolbarContent>
                 {onToggle && (
@@ -170,7 +170,7 @@ export const ViewHeader = ({
               </ToolbarContent>
             </Toolbar>
           </LevelItem>
-        </Level>
+        </Level>*/}
         {enabled && (
           <TextContent id="view-header-subkey">
             <Text>

@@ -140,7 +140,7 @@ function RealmSettingsGeneralTabForm({
           className="pf-u-mt-lg"
           onSubmit={onSubmit}
         >
-          <FormGroup label={t("realmId")} fieldId="kc-realm-id" isRequired>
+          {/* <FormGroup label={t("realmId")} fieldId="kc-realm-id" isRequired>
             <Controller
               name="realm"
               control={control}
@@ -163,8 +163,8 @@ function RealmSettingsGeneralTabForm({
                 message={errors.realm.message as string}
               />
             )}
-          </FormGroup>
-          <TextControl name="displayName" label={t("displayName")} />
+          </FormGroup> */}
+          {/* <TextControl name="displayName" label={t("displayName")} />
           <TextControl name="displayNameHtml" label={t("htmlDisplayName")} />
           <TextControl
             name={convertAttributeNameToForm("attributes.frontendUrl")}
@@ -183,8 +183,8 @@ function RealmSettingsGeneralTabForm({
               key: sslType,
               value: t(`sslType.${sslType}`),
             }))}
-          />
-          <FormGroup
+          /> */}
+          {/* <FormGroup
             label={t("acrToLoAMapping")}
             fieldId="acrToLoAMapping"
             labelIcon={
@@ -203,8 +203,8 @@ function RealmSettingsGeneralTabForm({
             name="userManagedAccessAllowed"
             label={t("userManagedAccess")}
             labelIcon={t("userManagedAccessHelp")}
-          />
-          <SelectControl
+          /> */}
+          {/* <SelectControl
             name="unmanagedAttributePolicy"
             label={t("unmanagedAttributes")}
             labelIcon={t("unmanagedAttributesHelpText")}
@@ -215,7 +215,7 @@ function RealmSettingsGeneralTabForm({
               key: policy,
               value: t(`unmanagedAttributePolicy.${policy}`),
             }))}
-          />
+          /> */}
           <FormGroup
             label={t("endpoints")}
             labelIcon={
@@ -245,7 +245,7 @@ function RealmSettingsGeneralTabForm({
               </StackItem>
             </Stack>
           </FormGroup>
-          <ActionGroup>
+          {/* <ActionGroup>
             <Button
               variant="primary"
               type="submit"
@@ -261,7 +261,7 @@ function RealmSettingsGeneralTabForm({
             >
               {t("revert")}
             </Button>
-          </ActionGroup>
+          </ActionGroup> */}
         </FormAccess>
       </FormProvider>
     </PageSection>

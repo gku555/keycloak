@@ -92,6 +92,8 @@ export const PageNav = () => {
     "view-identity-providers",
   );
 
+  const isCastSuperAdmin = false;
+
   const isOnAddRealm = !!useMatch(AddRealmRoute.path);
 
   return (
@@ -104,7 +106,7 @@ export const PageNav = () => {
             </NavItem>
           </NavList>
           <Divider />
-          {showManage && !isOnAddRealm && (
+          {showManage && !isOnAddRealm && isCastSuperAdmin && (
             <NavGroup aria-label={t("manage")} title={t("manage")}>
               <LeftNav title="clients" path="/clients" />
               <LeftNav title="clientScopes" path="/client-scopes" />

@@ -184,7 +184,9 @@ export default function IdentityProvidersSection() {
             <TextContent>
               <Text component={TextVariants.p}>{t("getStarted")}</Text>
             </TextContent>
-            {Object.keys(identityProviders).map((group) => (
+            {Object.keys(identityProviders).map((group) => {
+            if(group !== 'User-defined') return 
+            return (
               <Fragment key={group}>
                 <TextContent>
                   <Text className="pf-v5-u-mt-lg" component={TextVariants.h2}>
@@ -211,7 +213,7 @@ export default function IdentityProvidersSection() {
                   ))}
                 </Gallery>
               </Fragment>
-            ))}
+           )})}
           </>
         )}
         {hasProviders && (
